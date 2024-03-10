@@ -14,6 +14,7 @@ import Ploygon from './components/Ploygon'
 import InfoIcon from "./components/infoIcon"
 
 import { motion } from "framer-motion"
+import { Tooltip, Button } from "@material-tailwind/react";
 
 function App() {
 
@@ -63,7 +64,13 @@ function App() {
             </motion.div>
             <motion.div initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6 }} className='flex flex-col gap-4 bg-white   my-3 rounded py-4 px-12 '>
               <h1 className='font-bold text-2xl'>Sentiment</h1>
-              <p className='text-gray-500 text-xl flex items-center gap-2'>Key Events <InfoIcon /> </p>
+              <p className='text-gray-500 text-xl flex items-center gap-2'>Key Events <Tooltip content="ipsum dolor sit amet consectetur adipisicing elit."
+                className="w-64 bg-[#8d8d8d]"
+                animate={{
+                  mount: { scale: 1, y: 0, },
+                  unmount: { scale: 0, y: 25 },
+
+                }}><button><InfoIcon /></button></Tooltip> </p>
               <Carousel className="rounded-xl ">
                 <div className='relative h-full w-full bg-blue-50 p-3 flex items-start gap-6 '>
                   <img width="40" height="40" src={newsIcon} />
@@ -86,7 +93,13 @@ function App() {
 
               </Carousel>
               <div className='py-9 flex flex-col gap-8 justify-start mx-2'>
-                <h2 className='text-[#454759] text-xl flex items-center gap-2'>Analyst Estimates <InfoIcon /></h2>
+                <h2 className='text-[#454759] text-xl flex items-center gap-2'>Analyst Estimates<Tooltip content="ipsum dolor sit amet consectetur adipisicing elit."
+                  className="w-64 bg-[#8d8d8d]"
+                  animate={{
+                    mount: { scale: 1, y: 0, },
+                    unmount: { scale: 0, y: 25 },
+
+                  }}><button><InfoIcon /></button></Tooltip></h2>
                 <div className='flex items-center gap-4'>
                   <div className='w-44 h-44 bg-[#eef9f4] text-[#55b787] rounded-full flex items-center justify-center text-6xl'>
                     76%
