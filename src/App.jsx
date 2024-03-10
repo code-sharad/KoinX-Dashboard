@@ -33,7 +33,7 @@ function App() {
               </div>
               <div className='flex gap-12 items-start'>
                 <span className='text-black text-2xl flex flex-col gap-1 '><span className='flex items-center gap-2'>$46,953.04 <span className='bg-[#eef9f4] flex items-center gap-2 text-[#51ad7d] px-3 py-1 rounded text-sm '><Ploygon /> 2.51%</span><span className='text-sm text-blue-gray-600'>(24h)</span></span>
-                  <span className='text-lg'>39,42,343</span>
+                  <span className='text-lg'> ₹39,42,343</span>
                 </span>
 
               </div>
